@@ -22,6 +22,11 @@ jobs:
           pip install -r requirements.txt
           playwright install --with-deps chromium
 
+      # ---  НОВЫЙ ШАГ ---
+      - name: Prepare Database
+        run: python create_db.py
+      # --------------------------
+
       - name: Run tests
         run: pytest -v --alluredir=allure-results
         continue-on-error: true
