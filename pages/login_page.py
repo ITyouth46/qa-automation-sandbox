@@ -8,6 +8,7 @@ class LoginPage:
         self.password_input = page.locator("#password")
         self.submit_button = page.locator("#login-button")
         
+        
         # Заготовочка для будущих негативных тестов
         self.error_message = page.locator("[data-test='error']") 
 
@@ -18,3 +19,4 @@ class LoginPage:
         self.username_input.fill(username)
         self.password_input.fill(password)
         self.submit_button.click()
+

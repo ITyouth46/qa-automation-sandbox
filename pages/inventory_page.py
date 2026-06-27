@@ -4,7 +4,10 @@ class InventoryPage:
 
         self.add_product_backpack = page.locator("#add-to-cart-sauce-labs-backpack")
         self.count_shopping_cart = page.locator(".shopping_cart_badge")
+        self.cart_link = page.locator("[data-test='shopping-cart-link']")
 
     def add_backpack(self):
         self.add_product_backpack.click()
 
+    def go_to_cart(self):
+        self.cart_link.click()
