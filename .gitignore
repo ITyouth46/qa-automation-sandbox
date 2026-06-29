@@ -3,3 +3,7 @@ venv/
 __pycache__/
 allure-results/
 shop.db
+
+# Отчеты Allure (генерируются локально, их пушить не надо)
+allure-results/
+allure-report/
